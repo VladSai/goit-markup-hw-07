@@ -20,24 +20,27 @@
 
 <body>
     <!--Шапка-->
-    <header class="header">
-        <div class="container main-nav">
-            <a href="./index.html" class="logo"><span class="web">Web</span>Studio</a>
-            <nav class="nav">
-                <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="nav-link current">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
-                    <li class="item"><a href="" class="nav-link">Контакты</a></li>
+    <header class="page-header">
+        <div class="container page-header__container">
+            <a href="./index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
+            <nav class="page-header__nav">
+                <ul class="page-header__list list">
+                    <li class="page-header__item"><a href="./index.html"
+                            class="page-header__link page-header__link--current">Студія</a>
+                    </li>
+                    <li class="page-header__item"><a href="./portfolio.html" class="page-header__link">Портфоліо</a>
+                    </li>
+                    <li class="page-header__item"><a href="" class="page-header__link">Контакти</a></li>
                 </ul>
             </nav>
 
-            <ul class="contacts list">
-                <li class="item"><a href="mailto:info@devstudio.com" class="link">
-                        <svg class="contacts-icon-header" width="16px" height="12px">
+            <ul class="contact list">
+                <li class="contact__item"><a href="mailto:info@devstudio.com" class="contact__link">
+                        <svg class="contact__icon" width="16px" height="12px">
                             <use href="./images/icons.svg#icon-letter"></use>
                         </svg> info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="link">
-                        <svg class="contacts-icon-header" width="16px" height="12px">
+                <li class="contact__item"><a href="tel:+380961111111" class="contact__link">
+                        <svg class="contact__icon" width="16px" height="12px">
                             <use href="./images/icons.svg#icon-tel"></use>
                         </svg> +38 096 111 11 11</a></li>
             </ul>
@@ -49,63 +52,62 @@
         <!-- Герой -->
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title">эффективные решения для вашего бизнеса
+                <h1 class="hero__title">Ефективні рішення для вашого бізнесу
                 </h1>
-                <button type="button" class="button" data-modal-open>Заказать услугу</button>
+                <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
 
         <!-- качества -->
 
-        <section class="section">
+        <section class="specifics">
             <div class="container">
-                <h2 class="hidden">Принципы работы</h2>
-                <ul class="list-works list">
-                    <li class="item">
-                        <div class="icons-quality">
-                            <svg class="icon-antenna" width="70px" height="70px">
+                <h2 class="specifics__header specifics__header--hidden">Особенности</h2>
+                <ul class="specifics__list list">
+                    <li class="specifics__item">
+                        <div class="specifics__thumb">
+                            <svg class="specifics__icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="section-title">Внимание к деталям</h3>
-                        <p class="title">Идейные соображения, а также начало повседневной работы по формированию
-                            позиции.
+                        <h3 class="specifics__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <p class="specifics__desc">Ідейні міркування, і навіть початок повсякденної роботи з формування
+                            позиції.
                         </p>
                     </li>
 
-                    <li class="item">
-                        <div class="icons-quality">
-                            <svg class="icon-" width="70px" height="70px">
+                    <li class="specifics__item">
+                        <div class="specifics__thumb">
+                            <svg class="specifics__icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="section-title">Пунктуальность</h3>
-                        <p class="title">Задача организации, в особенности же рамки и место обучения кадров влечет
-                            за собой.
+                        <h3 class="specifics__title">ПУНКТУАЛЬНІСТЬ</h3>
+                        <p class="specifics__desc">Завдання організації, особливо рамки і місце навчання кадрів тягне у
+                            себе.
                         </p>
                     </li>
 
-                    <li class="item">
-                        <div class="icons-quality">
-                            <svg class="icon-diagram" width="70px" height="70px">
+                    <li class="specifics__item">
+                        <div class="specifics__thumb">
+                            <svg class="specifics__icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="section-title">Планирование</h3>
-                        <p class="title">Равным образом консультация с широким активом в значительной степени
-                            обуславливает.
+                        <h3 class="specifics__title">ПЛАНУВАННЯ</h3>
+                        <p class="specifics__desc">Так само консультація з широким активом значною мірою зумовлює.
                         </p>
                     </li>
 
-                    <li class="item">
-                        <div class="icons-quality">
-                            <svg class="icon-astronaut" width="70px" height="70px">
+                    <li class="specifics__item">
+                        <div class="specifics__thumb">
+                            <svg class="specifics__icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="section-title">Современные технологии</h3>
-                        <p class="title">Значимость этих проблем настолько очевидна, что реализация плановых
-                            заданий.
+                        <h3 class="specifics__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                        <p class="specifics__desc">Значимість цих проблем настільки очевидна, що реалізація планових
+                            завдань.
                         </p>
                     </li>
 
