@@ -298,32 +298,32 @@ body {
   padding-top: 0;
 }
 
-.featurs-title,
-.team-title {
+.featurs__title,
+.team__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
-.featurs-list,
-.team-list {
+.featurs__list,
+.team__list {
   display: flex;
 }
 
-.featurs-list .item + .item {
-  margin-left: 30px;
+.featurs__item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.featurs-item {
+/* .featurs__item {
   display: block;
-}
+} */
 
-.feuters-item-desc {
+.featurs__pic {
   position: relative;
 }
 
-.featurs-desc {
+.featurs__desc {
   display: flex;
   position: absolute;
   width: 100%;
@@ -349,50 +349,49 @@ body {
 
 /* .team-title с .featurs-title */
 
-.image-list {
+.team__spec {
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-pic {
-  display: block;
+.team__spec:not(:last-child) {
+  margin-right: 30px;
 }
 
-.team-desc {
+.team__desc {
   display: block;
   padding: 30px 32px;
   text-align: center;
   margin: 0 auto;
 }
 
-.team-name {
+.team__name {
   margin-bottom: 10px;
 }
 
-.team-spec {
+.team__position {
+  font-size: 16px;
+  line-height: 1.19;
+
   color: var(--primary-text-color);
 }
 
-.team-list > .item + .item {
-  margin-left: 30px;
-}
-
-.team-social {
+.social-net {
   display: flex;
   margin-top: 16px;
 }
 
-.team-social > .item + .item {
-  margin-left: 10px;
-}
-
-.team-social-item {
+.social-net__item {
   display: flex;
 }
 
-.social-item-link {
+.social-net__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-net__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -405,20 +404,20 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-social-icon {
+.social-net__icon {
   fill: var(--customers-icon-fill);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-item-link:hover .team-social-icon,
-.social-item-link:focus .team-social-icon {
-  fill: var(--white-color);
+.social-net__link:hover,
+.social-net__link:focus {
+  background-color: var(--accent-color);
 }
 
-.social-item-link:hover,
-.social-item-link:focus {
-  background-color: var(--accent-color);
+.social-net__link:hover .social-net__icon,
+.social-net__link:focus .social-net__icon {
+  fill: var(--white-color);
 }
 
 /* customers */
